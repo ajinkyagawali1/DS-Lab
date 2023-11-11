@@ -6,16 +6,16 @@ int front = -1;
 int rear = -1;
 
 bool isEmpty(){
-	if(front == -1){
-		return true;
-	}
+    if(front > rear){
+    	front = -1;
+    	rear = -1;
+    }
 
-	if(front > rear){
-		front = -1;
-		rear = -1;
-		return true;
-	}
-	return false;
+    if(front == -1){
+    	return true;
+    }
+	 	return false;
+
 }
 void enqueue(int data){
 	if(rear == 100){
