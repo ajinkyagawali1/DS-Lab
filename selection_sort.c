@@ -53,11 +53,7 @@ int main(int argc, char const *argv[])
 	selSort(arr, 5);
 
 	printf("\nAfter sorting the array is:\n");
-
-	for (int i = 0; i < 4; ++i)
-	{
-		printf("%d ", arr[i]);
-	}
+	print(arr,5);
 
 	return 0;
 }
